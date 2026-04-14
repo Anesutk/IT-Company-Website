@@ -950,6 +950,8 @@ body{
             background: #ffffff;
             transition: 0.3s;
             cursor: pointer;
+            display: inline-block;
+            margin-left: 5px;
         }
         
         .footer .footer-top .footer-newsletter input[type="submit"]:hover {
