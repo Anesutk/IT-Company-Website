@@ -349,7 +349,7 @@ body{
 }
 
 .counters .counter {
-	font-size: 45px;
+	font-size: clamp(30px, 5vw, 45px);
 	margin: 10px 0;
 }
 
