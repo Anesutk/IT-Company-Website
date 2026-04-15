@@ -573,7 +573,9 @@ body{
 }
 
 .clients img:hover {
-    opacity: .5;
+    opacity: .7;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .clients .owl-nav,
