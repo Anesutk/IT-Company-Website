@@ -204,6 +204,8 @@ padding-top: 8rem;
     animation-delay: 1s;
 
     transition: 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .hero-btn:hover {
@@ -1426,4 +1428,18 @@ padding-top: 8rem;
         .faq .row .accordion-container{
             width: 100%;
         }
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1.6;
+}
+section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+a:focus, button:focus {
+    outline: 2px solid #00bfff;
+    outline-offset: 3px;
 }
