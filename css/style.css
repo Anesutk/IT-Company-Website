@@ -95,29 +95,26 @@ body{
     background: #00bfff;
 }
 
-.header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
-    padding: 1.8rem 5rem;
+    padding: 1.0rem 5rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.4s ease;
 }
-.header.scrolled{
-    background: #000;
+
+.header.scrolled {
+    background: rgba(0, 46, 95, 0.9);
     padding: 1rem 5rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .header .logo img{
@@ -179,17 +176,20 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
-    
+
+padding-top: 8rem;
 }
-@keyframes zoomBg{
-    from{
+
+@keyframes zoomBg {
+    from {
         background-size: 100%;
     }
-    to{
+    to {
         background-size: 110%;
     }
 }
-.hero-btn{
+
+.hero-btn {
     margin-top: 2.5rem;
     padding: 1.2rem 3.5rem;
     font-size: 1.6rem;
@@ -204,27 +204,29 @@ body{
 
     transition: 0.3s ease;
 }
-.hero-btn:hover{
+
+.hero-btn:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 0 20px rgba(0,191,255,0.7);
 }
-.home h1, .home h2{
+
+.home h1,
+.home h2 {
     opacity: 0;
     transform: translateY(40px);
     animation: fadeUp 1s ease forwards;
 }
 
-.home h2{
+.home h2 {
     animation-delay: 0.5s;
 }
 
-@keyframes fadeUp{
-    to{
+@keyframes fadeUp {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 .home h1{
     color: #fff;
     font-size: 5.5rem;
@@ -243,7 +245,7 @@ body{
     width: 100%;
     background: url(../images/wave.png);
     background-size: 100rem 11rem;
-    animation: waves 8s linear infinite;
+    animation: waves 12s linear infinite;
     background-repeat: repeat-x;
 }
 
@@ -664,6 +666,7 @@ body{
 
 .team .heading{
     color: #00bfff;
+    text-align: center;
 }
 
 .team .heading::before, .team .heading::after{
@@ -982,7 +985,7 @@ body{
         }
         
         .footer .footer-top .footer-links ul a {
-            font-size: 14px;
+            font-size: 16px;
             color: #ffffff;
         }
         
@@ -1033,6 +1036,8 @@ body{
         .footer .copyright {
             text-align: center;
             padding-top: 30px;
+            color: #0fff;
+            font-size: 1.3rem;
         }
         
         @media (min-width: 768px) {
@@ -1127,7 +1132,7 @@ body{
         
         .faq .row .accordion-container .accordion .accordion-body{
             padding: 1rem;
-            color: #444;
+            color: #000;
             box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
             background-color: #fff;
             font-size: 1.3rem;
