@@ -602,6 +602,7 @@ body{
 
 .team .heading{
     color: #00bfff;
+    text-align: center;
 }
 
 .team .heading::before, .team .heading::after{
@@ -971,6 +972,8 @@ body{
         .footer .copyright {
             text-align: center;
             padding-top: 30px;
+            color: #0fff;
+            font-size: 1.3rem;
         }
         
         @media (min-width: 768px) {
