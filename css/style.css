@@ -162,8 +162,15 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/img1.jpg);
-    background-size: cover;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ), url(../images/img1.jpg);
+    background-position: center;
+    background-size: 100%;
+
+    animation: zoomBg 10s ease-in-out infinite alternate;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,6 +179,50 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
+    
+}
+@keyframes zoomBg{
+    from{
+        background-size: 100%;
+    }
+    to{
+        background-size: 110%;
+    }
+}
+.hero-btn{
+    margin-top: 2.5rem;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: linear-gradient(45deg, #00bfff, #007bff);
+    border-radius: 50px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 1s;
+
+    transition: 0.3s ease;
+}
+.hero-btn:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0,191,255,0.7);
+}
+.home h1, .home h2{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.home h2{
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .home h1{
