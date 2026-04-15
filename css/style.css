@@ -160,6 +160,7 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
+    padding-top: 8rem;
 }
 
 .home h1{
